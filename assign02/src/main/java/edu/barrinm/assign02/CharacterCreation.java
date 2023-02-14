@@ -2,7 +2,7 @@ package edu.barrinm.assign02;
 
 import java.util.Scanner;
 
-public class CharacterCreation {
+public class CharacterCreation { //
     public static void main(String [] args) {
 
         //local variables
