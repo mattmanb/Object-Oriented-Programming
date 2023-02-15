@@ -32,7 +32,7 @@ public class Player {
     }
     public int calculateBMI() {
         int BMI;
-        BMI = (int)Math.floor((703 * weight) / (Math.pow(height, 2)) + .5);
+        BMI = (int)((703 * weight) / (Math.pow(height, 2)));
         return BMI;
     }
     public String getNameString() {
@@ -50,6 +50,6 @@ public class Player {
         return "NAME: " + getNameString() +
                 "\nWEIGHT: " + getWeightString() +
                 "\nHEIGHT: " + getHeightString() +
-                "\nBMI: " + calculateBMI();
+                "\nBMI: " + calculateBMI() + "\n";
     }
 }
