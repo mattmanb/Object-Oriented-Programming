@@ -9,21 +9,20 @@ public class LetterPrinter {
         String [] sloganLines = new String[4]; //string array of size 4
         System.out.println("Enter business name:");
         name = input.nextLine(); //reads the business name
-        System.out.println("Enter boundary char:");
+        System.out.println("Enter boundary character:");
         String sBChar = input.nextLine(); //temporary string for boundary char
         boundaryChar = sBChar.charAt(0); //gets the first char of sBChar
         System.out.println("Enter slogan (max 4 lines):");
         for(int i = 0; i < sloganLines.length; i++) { //reads the next 4 lines of user input
             sloganLines[i] = input.nextLine();
         }
-        Letterhead l = new Letterhead(name, sloganLines, boundaryChar); //new Letterhead object
-        return l;
+        return new Letterhead(name, sloganLines, boundaryChar); //returns new Letterhead object;
     }
 
     public static void main(String [] args) {
         Scanner input = new Scanner(System.in); //new Scanner object
         Letterhead header = askForLetterheadData(input); //new Letterhead object
-        System.out.println("Your new letterhead");
+        System.out.println("Your new letterhead:");
         System.out.println(header); //prints the Letterhead
     }
 }
