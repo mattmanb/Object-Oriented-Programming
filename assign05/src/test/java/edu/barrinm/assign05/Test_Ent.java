@@ -1,4 +1,4 @@
-package edu.realemj.assign05;
+package edu.barrinm.assign05;
 // NOTE: CHANGE realemj to YOUR SITNETID!!!
 
 import org.testng.Assert;
