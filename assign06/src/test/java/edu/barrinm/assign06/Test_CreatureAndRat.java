@@ -1,4 +1,4 @@
-package edu.realemj.assign06;
+package edu.barrinm.assign06;
 import edu.realemj.assign04.CharBoard;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
 import org.testng.Assert;
@@ -6,21 +6,21 @@ import org.testng.annotations.Test;
 
 import java.util.Scanner;
 
-public class Test_CreatureAndSkeleton {
+public class Test_CreatureAndRat {
 
     private final static int EXTENT = 10;
 
     @Test()
     public void testConstructorAndData() {
-        // Create Creature (requires Skeleton to work)
-        Creature m = new Skeleton();
+        // Create Creature (requires Rat to work)
+        Creature m = new Rat();
         Assert.assertEquals(m.getRow(), 0);
         Assert.assertEquals(m.getCol(), 0);
 
         // Create Creature with different locations
         for (int row = -EXTENT; row <= EXTENT; row++) {
             for (int col = -EXTENT; col <= EXTENT; col++) {
-                Creature m2 = new Skeleton(row, col);
+                Creature m2 = new Rat(row, col);
                 Assert.assertEquals(m2.getRow(), row);
                 Assert.assertEquals(m2.getCol(), col);
             }
@@ -29,8 +29,8 @@ public class Test_CreatureAndSkeleton {
 
     @Test()
     public void testSetters() {
-        // Create Creature (requires Skeleton to work)
-        Creature m = new Skeleton();
+        // Create Creature (requires Rat to work)
+        Creature m = new Rat();
 
         // Set Creature with different locations
         for (int row = -EXTENT; row <= EXTENT; row++) {
@@ -45,8 +45,8 @@ public class Test_CreatureAndSkeleton {
 
     @Test()
     public void testLoad() {
-        // Create Monster (requires Skeleton to work)
-        Creature m = new Skeleton();
+        // Create Monster (requires Rat to work)
+        Creature m = new Rat();
 
         // Create Scanners that contain different rows and columns
         for (int row = -EXTENT; row <= EXTENT; row++) {
@@ -92,8 +92,8 @@ public class Test_CreatureAndSkeleton {
 
     @Test()
     public void testDraw() {
-        // Create Creature (requires Skeleton to work)
-        Creature m = new Skeleton();
+        // Create Creature (requires Rat to work)
+        Creature m = new Rat();
 
         // Create CharBoard
         CharBoard map = new CharBoard(10, 20, '.');
@@ -102,7 +102,7 @@ public class Test_CreatureAndSkeleton {
         // 1st draw
         m.draw(map);
         Assert.assertEquals(map.getMapString(),
-                "S...................\n" +
+                "R...................\n" +
                         "....................\n" +
                         "....................\n" +
                         "....................\n" +
@@ -118,12 +118,12 @@ public class Test_CreatureAndSkeleton {
         m.setCol(9);
         m.draw(map);
         Assert.assertEquals(map.getMapString(),
-                "S...................\n" +
+                "R...................\n" +
                         "....................\n" +
                         "....................\n" +
                         "....................\n" +
                         "....................\n" +
-                        ".........S..........\n" +
+                        ".........R..........\n" +
                         "....................\n" +
                         "....................\n" +
                         "....................\n" +
@@ -134,27 +134,27 @@ public class Test_CreatureAndSkeleton {
         m.setCol(17);
         m.draw(map);
         Assert.assertEquals(map.getMapString(),
-                "S...................\n" +
-                        ".................S..\n" +
+                "R...................\n" +
+                        ".................R..\n" +
                         "....................\n" +
                         "....................\n" +
                         "....................\n" +
-                        ".........S..........\n" +
+                        ".........R..........\n" +
                         "....................\n" +
                         "....................\n" +
                         "....................\n" +
                         "....................\n");
 
         // 4th draw
-        m = new Skeleton(7, -6);
+        m = new Rat(7, -6);
         m.draw(map);
         Assert.assertEquals(map.getMapString(),
-                "S...................\n" +
-                        ".................S..\n" +
+                "R...................\n" +
+                        ".................R..\n" +
                         "....................\n" +
                         "....................\n" +
                         "....................\n" +
-                        ".........S..........\n" +
+                        ".........R..........\n" +
                         "....................\n" +
                         "....................\n" +
                         "....................\n" +

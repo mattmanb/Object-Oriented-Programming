@@ -9,8 +9,6 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":assign04"))
-    testImplementation(project(":assign04"))
     testImplementation(testFixtures(project(":coretest")))
     testImplementation 'org.testng:testng:7.7.0'
 }
@@ -20,21 +18,15 @@ test {
 }
 
 application {
-    mainClass = "edu.barrinm.assign06.KingsField"
-    mainModule = "assign06mod"
+    mainClass = "Shape"
+    mainModule = "exercises13"
 }
 
 task runApp(type: JavaExec, dependsOn: build) {
     classpath = sourceSets.main.runtimeClasspath
     jvmArgs = ['--module-path', classpath.asPath]
-    mainModule = "assign06mod"
+    mainModule = "exercises13"
     group "application"
     standardInput = System.in
 }
-
-applicationDistribution.from('data') {
-    into 'bin/data'
-}
-
-
 
