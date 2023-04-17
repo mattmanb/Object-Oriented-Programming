@@ -1,5 +1,5 @@
 package edu.barrinm.assign06;
-import edu.realemj.assign04.CharBoard;
+import edu.barrinm.assign04.CharBoard;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
 import org.testng.Assert;
 import org.testng.annotations.Test;
