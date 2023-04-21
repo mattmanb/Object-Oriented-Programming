@@ -1,4 +1,4 @@
-package edu.realemj.assign07;
+package edu.barrinm.assign07;
 
 import edu.realemj.assign04.CharBoard;
 import edu.realemj.assign06.*;
