@@ -1,8 +1,8 @@
 package edu.barrinm.assign07;
 
-import edu.realemj.assign04.CharBoard;
-import edu.realemj.assign06.Creature;
-import edu.realemj.assign06.GameFileException;
+import edu.barrinm.assign04.CharBoard;
+import edu.barrinm.assign06.Creature;
+import edu.barrinm.assign06.GameFileException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
