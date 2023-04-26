@@ -14,3 +14,4 @@ public class Skeleton extends Creature{
         map.setPos(getRow(), getCol(), 'S');
     }
 }
+
