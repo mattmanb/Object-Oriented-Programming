@@ -1,3 +1,0 @@
-2
-Skeleton 3 2
-Rat 6 12
